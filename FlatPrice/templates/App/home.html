@@ -5,4 +5,18 @@
 {% for value in price %}
     {{ value }}
 {% endfor %}
+
+<form action="get_data" method="post">
+    <label for="get_price"><h1>Get Price</h1></label>
+    <div><span>value</span><input type="number" name="get_price" id="totsp" value="Общая площадь (м)"></div>
+    <div><span>value</span><input type="number" name="get_price" id="livesp" value="Жилая площадь (м)"></div>
+    <div><span>value</span><input type="number" name="get_price" id="kitsp" value="Площадь кухни (м)"></div>
+    <div><span>value</span><input type="number" name="get_price" id="dist" value="Расстояние от центра (км)"></div>
+    <div><span>value</span><input type="number" name="get_price" id="metrdist" value="Расстояние от метро (мин)"></div>
+    <div><span>value</span><input type="checkbox" name="get_price" id="walk" value="Пешком от метро"></div>
+    <div><span>value</span><input type="checkbox" name="get_price" id="brick" value="Кирпич\Монолит\Ж-Б"></div>
+    <div><span>value</span><input type="checkbox" name="get_price" id="floor" value="Первый или последний этаж"></div>
+    <div><span>value</span><input type="submit" value="Отправить"></div>
+</form>
+
 {% endblock body %}
